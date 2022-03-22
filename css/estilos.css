@@ -1,0 +1,523 @@
+@font-face {
+	font-family:Titulo;
+	src:url(../fontes/ANODETONOONE.TTF);
+}
+
+h1 {
+	font-family:Titulo;
+	font-size:40px;
+	color:#603A03;
+}
+
+body {
+	background-image:url(../imgs/fundojogo.jpg);
+	background-size: cover;
+    background-position: center;
+    padding: 0;
+	max-width: auto;
+    width: 100vw;
+	max-height: auto;
+    height: 100vh;
+    margin: 0;
+}
+
+#container{
+	width:950px;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#fundoGame {
+	width:950px;
+	height:630px;
+	background-image:url(../imgs/fundo_game.jpg);
+	border-color:#FFF;
+	border-style:solid;
+}
+
+#jogador {
+	width:256px;
+	height:66px;
+	position:absolute;
+	left:8px;
+	top:179px;
+	background-image:url(../imgs/apache.png);
+
+}
+
+#inimigo1 {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 689px;
+	top: 253px;
+	background-image:url(../imgs/inimigo1.png);
+	
+}
+
+#inimigo2 {
+	width: 165px;
+	height: 70px;
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	background-image: url(../imgs/inimigo2.png);
+}
+
+#amigo {
+	width: 44px;
+	height: 51px;
+	position: absolute;
+	left: 10px;
+	top: 464px;
+	background-image:url(../imgs/amigo.png);
+}
+
+#inicio {
+	width:auto;
+	max-width: 400px;
+	height:auto;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+.anima1 {
+	background-image:url(../imgs/helicoptero.png);
+	animation:play .5s steps(2) infinite;
+
+       -webkit-animation: play .5s steps(2) infinite;
+       -moz-animation: play .5s steps(2) infinite;
+       -ms-animation: play .5s steps(2) infinite;
+       -o-animation: play .5s steps(2) infinite;
+}
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
+
+
+@-webkit-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-o-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+.anima2 {
+    background-image:url(../imgs/inimigo1.png);
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite; 
+}
+
+.anima3 {
+	background-image:url(../imgs/amigo.png);
+	animation:play2 .9s steps(12) infinite;
+	-webkit-animation: play2 .9s steps(12) infinite;
+       -moz-animation: play2 .9s steps(12) infinite;
+        -ms-animation: play2 .9s steps(12) infinite;
+         -o-animation: play2 .9s steps(12) infinite;
+}
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-528px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-o-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(../imgs/amigo_explosao.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+/* inicio codigo cadastro
+
+/* CSS reset */
+*, *:before, *:after { 
+	margin:0;
+	padding:0;
+	font-family:Titulo;
+/*	font-family: Arial,sans-serif;*/
+  }
+   
+  /* remove a linha dos links */
+  a{
+	text-decoration: none;
+  }
+   
+  /* esconde as ancoras da tela */
+  a.links{
+	display: none;
+  }
+
+  .content{
+	width: 500px;
+	min-height: 560px;    
+	margin: 0px auto;
+	position: relative;   
+  }
+
+  h1{
+	font-size: 48px;
+	color:#603A03;
+	/*color: #066a75;*/
+	padding: 2px 0 10px 0;
+	font-family:Titulo;
+	/*font-family: Arial,sans-serif;*/
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+  }
+
+  h1:after{
+	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 10px;
+	background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  }
+
+  p{
+	margin-bottom:15px;
+  }
+   
+  .content p:first-child{
+	margin: 0px;
+  }
+   
+  label{
+	color:#603A03;
+	/*color: #405c60;*/
+	position: relative;
+  }
+  /* placeholder */
+::-webkit-input-placeholder  {
+	color: #bebcbc; 
+	font-style: italic;
+  }
+   
+  input:-moz-placeholder,
+  textarea:-moz-placeholder{
+	color: #bebcbc;
+	font-style: italic;
+  }
+  
+  input {
+	outline: none;
+  }
+   
+  /*estilo dos input,  menos o checkbox */
+  input:not([type="checkbox"]){
+	width: 95%;
+	margin-top: 4px;
+	padding: 10px;    
+	border: 1px solid #b2b2b2;
+   
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+   
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+   
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+  }
+
+  
+/*estilo do botão submit */
+input[type="submit"]{
+	width: 100%!important;
+	cursor: pointer;  
+	background: rgb(96, 58, 3);
+	padding: 8px 5px;
+	color: #fff;
+	font-size: 20px;  
+	border: 1px solid #fff;   
+	margin-bottom: 10px;  
+	text-shadow: 0 1px 1px #333;
+   
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+   
+	transition: all 0.2s linear;
+  }
+   
+  /*estilo do botão submit no hover */
+  input[type="submit"]:hover{
+	background: #917a5a;
+  }
+
+  .link{
+	position: absolute;
+	background: #e1eaeb;
+	color: #7f7c7c;
+	left: 0px;
+	height: 20px;
+	width: 440px;
+	padding: 17px 30px 20px 30px;
+	font-size: 16px;
+	text-align: right;
+	border-top: 1px solid #dbe5e8;
+   
+	-webkit-border-radius: 0 0  5px 5px;
+	border-radius: 0 0  5px 5px;
+  }
+   
+  .link a {
+	font-weight: bold;
+	background: #f7f8f1;
+	padding: 6px;
+	color: rgb(96, 58, 3);
+	margin-left: 10px;
+	border: 1px solid #cbd518;
+   
+	-webkit-border-radius: 4px;
+	border-radius: 4px;  
+   
+	-webkit-transition: all 0.4s linear;
+	transition: all 0.4s  linear;
+  }
+   
+  .link a:hover {
+	color:#603A03;
+	/*color: #39bfd7;*/
+	background: #f7f7f7;
+	border: 1px solid #2d3131;
+  }
+
+  #cadastro, 
+#login{
+  position: absolute;
+  top: 0px;
+  width: 88%;   
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: #f7f7f7;
+  border: 1px solid rgba(147, 184, 189,0.8);
+   
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+ 
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+/* Efeito ao clicar no botão ( Ir para Login ) */
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+ 
+/* Efeito ao clicar no botão ( Cadastre-se ) */
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateX(-20px);
+	}
+	100% {
+	  opacity: 1;
+	  -webkit-transform: translateX(0);
+	}
+  }
+   
+  @keyframes fadeInLeft {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+   
+  /*fadeOutLeft*/
+  @-webkit-keyframes fadeOutLeft {
+	0% {
+	  opacity: 1;
+	  -webkit-transform: translateX(0);
+	}
+	100% {
+	  opacity: 0;
+	  -webkit-transform: translateX(-20px);
+	}
+  }
+   
+  @keyframes fadeOutLeft {
+	0% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+	100% {
+	  opacity: 0;
+	  transform: translateX(-20px);
+	}
+  }
+
+
+
+
+
+
+
+
